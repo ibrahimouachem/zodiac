@@ -1,0 +1,64 @@
+body {
+	background-image: url('../img/zodiac-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: black;
+	text-align: center;
+}
+
+@media (max-width: 930px){
+	body {
+		background-position: center top;
+		background-size: 930px; 
+	}
+}
+
+/*body {
+	background-color:#556;
+	background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+	linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+	background-size:80px 140px;
+	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}*/
+
+#main {
+	margin: 18% auto;
+	color: white;
+	padding: 5% 0;
+	background-color: rgba(000,0,0,0.4);
+}
+
+#dontKnowSign {
+	border: 0;
+	background: none;
+}
+#dontKnowSign:hover {
+	text-decoration: underline;
+}
+
+#zodiacModal {
+	color: gray;
+	text-shadow: none;
+}
+
+#zodiac-body-modal img {
+	height: 200px;
+}
+
+#zodiac-body-modal {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 16px;
+}
+
+.btn-height {
+	height: 34px;
+}
+
+.addShadow {
+	text-shadow: 0 0 8px black, 0 0 8px black;
+}

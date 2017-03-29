@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Zodiak">
+		<meta name="keywords" content="Zodiak">
+		<meta name="author" content="Alec Ellebracht">
+		<title>Zodiak</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+		<section id="main">
+
+			<h3 id="main-header" class="addShadow">Select your sign</h3>
+
+			<form>
+				<br>
+				<select class="btn btn-default btn-height" id="yourSign">
+					<option value="Aquarius">Aquarius</option>
+					<option value="Pisces">Pisces</option>
+					<option value="Aries">Aries</option>
+					<option value="Taurus">Taurus</option>
+					<option value="Gemini">Gemini</option>
+					<option value="Cancer">Cancer</option>
+					<option value="Leo">Leo</option>
+					<option value="Virgo">Virgo</option>
+					<option value="Libra">Libra</option>
+					<option value="Scorpio">Scorpio</option>
+					<option value="Sagittarius">Sagittarius</option>
+					<option value="Capricorn">Capricorn</option>
+				</select>
+
+				<span id="dateList"></span>
+
+				<span>
+					<button class="btn btn-default" type="button" onclick="getZodiac()" data-toggle="modal" data-target="#zodiacModal">Get Some Info!</button>
+				</span>
+
+				<br>
+				<button id="dontKnowSign" type="button" class="addShadow" onclick="switchScreen()">I don't know my sign</button>
+			</form>
+
+
+			<!-- Modal -->
+			<div class="modal fade" id="zodiacModal" tabindex="-1" role="dialog" aria-labelledby="zodiacLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="zodiac-title-modal"></h4>
+						</div>
+
+						<div class="modal-body">
+							<div id="zodiac-body-modal">
+								<!-- js fills this with an img -->
+							</div>
+						</div>
+
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="js/jquery-1.12.0.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/main.js"></script> <!-- our script is last -->
+	</body>
+
+</html>
